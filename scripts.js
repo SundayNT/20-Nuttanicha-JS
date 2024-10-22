@@ -43,7 +43,6 @@ addToCartBtn.onclick = function() {
         alert('Please fill in image URL')
     }
 
-    
     listItem.appendChild(checkBox)
     listItem.appendChild(listImg) ;
     listItem.appendChild(listText) ;
