@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="shopping_container">
+        <h1 class="shopping_h1">Shopping Cart</h1>
+        <hr>
+        <h2 class="add_item_h2">Add Item to Cart</h2>
+
+        <div class="information_container">
+            <label for="item name">Item name : </label>
+            <input type="text" id="item_input" class="iteminput" placeholder="Enter the name">
+
+            <label for="item price">Price :</label>
+            <input type="number" min="1" id="price_input" class="priceinput" placeholder="Enter the price">
+
+            <label for="img url">Image URL : </label>
+            <input type="url" id="img_url_input" class="imginput" placeholder="Enter image URL">
+
+            <button id="add_to_cart_Btn" class="addtocartBtn">Add to Cart</button>
+        </div>
+
+        <ul id="cart_list_space">
+
+        </ul>
+    </section>
+    
+    <section id="total_price_container" class="totalpricecont">
+        <hr>
+        <h2 class="totalprice_h2">Summary</h2>
+        <div id="total_price_box" class="total_price_font">
+
+        </div>
+        <hr>
+    </section>
+</body>
+<script src="scripts.js"></script>
+</html>
