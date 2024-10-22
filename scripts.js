@@ -28,6 +28,10 @@ addToCartBtn.onclick = function() {
     let listImg = document.createElement('img') ;
     let deleteBtn = document.createElement('button') ;
 
+    let checkBox = document.createElement('input') ;
+    checkBox.type = 'checkbox'
+    checkBox.id = 'myCheckbox'
+
     let myImgUrl = imgUrlInput.value.trim() ;
     if (myImgUrl) {
         imgUrlInput.value = '' ;
@@ -39,6 +43,8 @@ addToCartBtn.onclick = function() {
         alert('Please fill in image URL')
     }
 
+    
+    listItem.appendChild(checkBox)
     listItem.appendChild(listImg) ;
     listItem.appendChild(listText) ;
     listText.textContent = myItem ;
