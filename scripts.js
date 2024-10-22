@@ -3,6 +3,7 @@ let itemInput = document.querySelector('#item_input') ;
 let priceInput = document.querySelector('#price_input') ;
 let imgUrlInput = document.querySelector('#img_url_input') ;
 let addToCartBtn = document.querySelector('#add_to_cart_Btn') ;
+let checkOutBtn = document.querySelector('#checkout_button')
 
 let totalPriceBox = document.querySelector('#total_price_box');
 let totalPrice = 0; 
@@ -68,6 +69,10 @@ addToCartBtn.onclick = function() {
 
 function updateTotalPrice() {
     totalPriceBox.textContent = `Total Price: $${totalPrice.toFixed(2)}`;
+}
+
+checkOutBtn.onclick = function() {
+        alert('Thank You for Your Purchase!') ;
 }
 
 

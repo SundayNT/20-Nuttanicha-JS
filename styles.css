@@ -76,6 +76,10 @@ button {
     font-size: 20px;
     margin-bottom: 20px;
 }
+.checkoutBtn {
+    margin-bottom: 20px;
+    background-color: #0454eb;
+}
 
 
 @media only screen and (max-width: 600px) {
